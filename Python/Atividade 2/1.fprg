@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="1"/>
+        <attribute name="authors" value="aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-28 09:03:53 "/>
+        <attribute name="created" value="YWx1bm87U1BTVEFFUy02MTg1MTk7MjAyNS0wOC0yODsiMDc6MjM6NTQgIjsyNjU2"/>
+        <attribute name="edited" value="YWx1bm87U1BTVEFFUy02MTg1MTk7MjAyNS0wOC0yODsiMDk6MDM6NTMgIjsxOzI3NjM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <declare name="soma" type="Integer" array="False" size=""/>
+            <assign variable="soma" expression="0"/>
+            <declare name="media" type="Real" array="False" size=""/>
+            <declare name="contador" type="Integer" array="False" size=""/>
+            <for variable="contador" start="1" end="10" direction="inc" step="1">
+                <output expression="&quot;Digite o numero &quot; &amp; contador" newline="True"/>
+                <input variable="n"/>
+                <assign variable="soma" expression="soma+n"/>
+            </for>
+            <assign variable="media" expression="soma/10"/>
+            <output expression="media" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

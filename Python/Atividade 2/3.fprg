@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="3"/>
+        <attribute name="authors" value="aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-28 09:42:10 "/>
+        <attribute name="created" value="YWx1bm87U1BTVEFFUy02MTg1MTk7MjAyNS0wOC0yODsiMDk6MzE6MTUgIjsyNjU0"/>
+        <attribute name="edited" value="YWx1bm87U1BTVEFFUy02MTg1MTk7MjAyNS0wOC0yODsiMDk6NDI6MTAgIjsxOzI3NTk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="N1, N2" type="Integer" array="False" size=""/>
+            <output expression="&quot;primeiro numero&quot;" newline="True"/>
+            <input variable="N1"/>
+            <output expression="&quot;segundo numero&quot;" newline="True"/>
+            <input variable="N2"/>
+            <declare name="I" type="Integer" array="False" size=""/>
+            <for variable="I" start="N1" end="N2-1" direction="inc" step="1">
+                <output expression="&quot;Valores situados &quot; &amp; N1+1" newline="True"/>
+                <assign variable="N1" expression="N1+1"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

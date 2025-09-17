@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="2"/>
+        <attribute name="authors" value="aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-28 09:30:59 "/>
+        <attribute name="created" value="YWx1bm87U1BTVEFFUy02MTg1MTk7MjAyNS0wOC0yODsiMDk6MDQ6MzkgIjsyNjYw"/>
+        <attribute name="edited" value="YWx1bm87U1BTVEFFUy02MTg1MTk7MjAyNS0wOC0yODsiMDk6MzA6NTkgIjsxOzI3Njk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Escreva uma temperatura em celsius: &quot;" newline="True"/>
+            <declare name="celsius" type="Real" array="False" size=""/>
+            <input variable="celsius"/>
+            <assign variable="celsius" expression="0"/>
+            <declare name="kelvin" type="Real" array="False" size=""/>
+            <while expression="celsius &gt;=0">
+                <output expression="&quot;Escreva uma temperatura em celsius: &quot;" newline="True"/>
+                <input variable="celsius"/>
+                <assign variable="kelvin" expression="celsius + 274.15"/>
+                <if expression="celsius &gt;=0">
+                    <then>
+                        <output expression="&quot;sua temperatura em kelvin &#233;: &quot; &amp;kelvin" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

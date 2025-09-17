@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="3"/>
+        <attribute name="authors" value="aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-21 08:47:00 "/>
+        <attribute name="created" value="YWx1bm87U1BTVEFFUy02MTg1MTk7MjAyNS0wOC0yMTsiMDg6MzU6MTcgIjsyNjUy"/>
+        <attribute name="edited" value="YWx1bm87U1BTVEFFUy02MTg1MTk7MjAyNS0wOC0yMTsiMDg6NDc6MDAgIjsxOzI3NTU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="KM, litros" type="Real" array="False" size=""/>
+            <declare name="media" type="Real" array="False" size=""/>
+            <output expression="&quot;KM&quot;" newline="True"/>
+            <input variable="KM"/>
+            <output expression="&quot;litros&quot;" newline="True"/>
+            <input variable="litros"/>
+            <assign variable="media" expression="KM / litros"/>
+        </body>
+    </function>
+</flowgorithm>

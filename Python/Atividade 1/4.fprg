@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="4"/>
+        <attribute name="authors" value="aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-21 09:04:45 "/>
+        <attribute name="created" value="YWx1bm87U1BTVEFFUy02MTg1MTk7MjAyNS0wOC0yMTsiMDg6NDc6MTEgIjsyNjQ5"/>
+        <attribute name="edited" value="YWx1bm87U1BTVEFFUy02MTg1MTk7MjAyNS0wOC0yMTsiMDk6MDQ6NDUgIjsxOzI3NTg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="atual, ano" type="Integer" array="False" size=""/>
+            <declare name="idade" type="Integer" array="False" size=""/>
+            <output expression="&quot;escreva o ano atual&quot;" newline="True"/>
+            <input variable="atual"/>
+            <output expression="&quot;escreva seu ano de nascimento&quot;" newline="True"/>
+            <input variable="ano"/>
+            <assign variable="idade" expression="atual - ano"/>
+            <output expression="&quot;sua idade e &quot; &amp; idade" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

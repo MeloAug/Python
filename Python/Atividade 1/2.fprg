@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="2"/>
+        <attribute name="authors" value="aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-21 08:35:14 "/>
+        <attribute name="created" value="YWx1bm87U1BTVEFFUy02MTg1MTk7MjAyNS0wOC0yMTsiMDg6MjM6MzYgIjsyNjUw"/>
+        <attribute name="edited" value="YWx1bm87U1BTVEFFUy02MTg1MTk7MjAyNS0wOC0yMTsiMDg6MzU6MTQgIjsxOzI3NTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1, n2" type="Integer" array="False" size=""/>
+            <declare name="resultado" type="Integer" array="False" size=""/>
+            <output expression="&quot;primeiro valor&quot;" newline="True"/>
+            <input variable="n1"/>
+            <output expression="&quot;segundo valor&quot;" newline="True"/>
+            <input variable="n2"/>
+            <assign variable="resultado" expression="n1 + n2"/>
+            <if expression="resultado &lt;0">
+                <then>
+                    <output expression="&quot;UNIVERSIDADE&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;ESTACIO&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
