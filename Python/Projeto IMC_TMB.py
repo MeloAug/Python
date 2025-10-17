@@ -1,6 +1,8 @@
 pacientes = []
 quantidade = int(input("Quantos pacientes serão cadastrados? "))
-for i in range (3):
+IMCs = []
+TMBs =[]
+for i in range (1):
     print(f"\nPaciente {i+1}")
     paciente = {
         'nome':input('Digite o nome: '),
@@ -9,23 +11,48 @@ for i in range (3):
         'altura':float(input('Digite a altura(metros): ')),
         'idade':int(input('Digite a idade: '))
     }
-    IMC = paciente['peso'] / (paciente['altura'] ** 2)
-    if paciente ['peso'] == 'M':
-        TMB = 9.99 * paciente['peso'] + 6.25 * (paciente['altura'] *100)- 4.92 * paciente['idade'] + 5
+    pacientes.append(paciente)
+    
+for paciente in pacientes:
+    paciente ['IMC'] = paciente ['peso'] / (paciente['altura'] **2)
+    IMCs.append(paciente['IMC'])
+    if paciente['sexo'] =='M':
+        paciente['TMB'] = 9,99*paciente['peso'] + 6,25*paciente['altura']*100 - 4,92*paciente['idade'] + 5
     else:
-        TMB = 9.99 * paciente['peso'] + 6.25 * (paciente['altura'] *100) - 4.92 * paciente['idade'] - 161    
+        paciente['TMB'] = 9,99*paciente['peso'] + 6,25*paciente['altura']*100 - 4,92*paciente['idade'] + 161
+    TMBs.append(paciente['TMB'])
         
     
-    print("\nOpções:")
-    print("1  Maior IMC")
-    print("2  Maior TMB")
-    print("3  Menor IMC")
-    print("4  Menor TMB")        
-    
-    opção = int(input("Digite um numero das opções: "))
-    
-    pacientes.append(paciente)
-for paciente in pacientes:
-    paciente
-    
-print(pacientes)
+print ('Opções: ')  
+print ('1 – maior IMC')
+print ('2 – maior TMB ')
+print ('3 – menor IMC')
+print ('4 – menor TMB ')
+
+opcao= input('Digite a opção: ')
+
+maior_IMC = max(IMCs)
+maior_TMB = max(TMBs)
+menor_IMC = min(IMCs)
+menor_TMB = min(TMBs)
+        
+if opcao =='1':
+    for paciente in pacientes:
+        if paciente['IMC'] == maior_IMC:
+            print(paciente)
+            
+if opcao =='2':
+    for paciente in pacientes:
+        if paciente['TMB'] == maior_TMB:
+            print(paciente)
+            
+if opcao =='3':
+    for paciente in pacientes:
+        if paciente['IMC'] == menor_IMC:
+            print(paciente)
+            
+if opcao =='4':
+    for paciente in pacientes:
+        if paciente['TMB'] == menor_TMB:
+            print(paciente)
+            
