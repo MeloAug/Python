@@ -33,4 +33,4 @@ botao_enviar = tk.Button(janela, text="Enviar", command=enviar_dados)
 botao_enviar.pack(pady=20)
 
 #incializa o loop
-janela.mainloop
+janela.mainloop()
